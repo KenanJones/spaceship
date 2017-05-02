@@ -2,13 +2,17 @@ package physics;
 
 public class Direction{
 
-  private int degrees;
+  private double degrees;
 
-  public Direction(int degrees){
+  public Direction(double degrees){
     this.degrees = (degrees%360 + 360)%360;
   }
 
-  public double getDegrees(){
+  public double degrees(){
     return this.degrees;
+  }
+  
+  public String toString(){
+    return this.degrees + " degrees";
   }
 }
