@@ -1,4 +1,4 @@
-package physics;
+package edu.jalc.physics;
 
 public class Direction{
 
@@ -11,7 +11,7 @@ public class Direction{
   public double degrees(){
     return this.degrees;
   }
-  
+
   public String toString(){
     return this.degrees + " degrees";
   }
