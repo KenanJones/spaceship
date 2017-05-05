@@ -1,12 +1,16 @@
 package edu.jalc.spaceships;
 
-public class RocketEngine{
+public class RocketEngine extends Thruster{
 
-  public final double maxForce, maxSpeed;
+  public final double maxSpeed;
 
   public RocketEngine(double force, double speed){
-    this.maxForce = force;
+    super(force);
     this.maxSpeed = speed;
+  }
+  
+  public double thrust(double velocity){
+    return this.maxForce *(1-velocity/this.maxSpeed);
   }
 
 }
